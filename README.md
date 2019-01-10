@@ -12,7 +12,7 @@ Note: Python version is Python 2.7.
 Firstly, you need necessary credentials. "*Q12 bot*" uses **Google Cloud Vision API**, **Google Custom Search** and **Google Natural Language API**. You can obtain them from [Google Cloud console](http://console.cloud.google.com). *Cloud Vison* API uses a service account so **GOOGLE_APPLICATION_CREDENTIALS** environment variable must be set with the path of your JSON key file. Eventually, the other two need an API key, this API key is held by API_KEY variable declared in *g_search.py*.
 
 ```
-git clone 
+git clone https://github.com/PeterGabaldon/Q12-bot.git
 cd "Q12 bot"
 python bot.py [args]
 ```
