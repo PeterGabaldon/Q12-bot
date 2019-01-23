@@ -35,7 +35,7 @@ If you decide to use the "Auto screenshot" option the script will try to take a 
 
 # The BOT
 The bot performs two process for answer prediction separated in two threads.  
-Note: all strings are in lowercase and the words that are not meangful(prepositions, example) are discarded.
+Note: all strings are in lowercase and the words that are not meangful(like prepositions) are discarded.
 * First one is a simple Google Search, using a custom engine. This search is performed with the question, previously read using Google OCR. After the search, the first ten results are used for counting up the times each option appear. Each time the option appear in the content of a result, exactly the same, is counted. If part of the whole option is found, i.e., one word of the whole string, 0.5 is added each time.
 * The second one uses Google Natural Language API to obtain keywords of the question and Wikipedia URLs, if it is possible. Then, the same process is performed.
 For each result that Google throws, after the previously described actions are done, results are printed in screen, red ones are those which comes from the search after using GNL API and the blue ones for results of the common Google Search.  
